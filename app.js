@@ -142,3 +142,5 @@ randomBtn.addEventListener("click", function () {
 normalBtn.addEventListener("click", function () {
     document.body.style.backgroundColor = colors[1];
 });
+
+
