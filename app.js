@@ -100,16 +100,9 @@ filterBtn.forEach(function (btn) {
         else {
             displayMenuItems(menuCategory)
         }
-
-
-
-
         //console.log(e.currentTarget.dataset.id)
-
     })
 })
-
-
 
 
 function displayMenuItems(menuItems) {
@@ -134,3 +127,18 @@ function displayMenuItems(menuItems) {
 
 
 }
+
+//dark mode
+
+const colors = ["#444444", "#ffffff"];
+const randomBtn = document.querySelector(".btn-1")
+const normalBtn = document.querySelector(".btn-2")
+const color = document.querySelector(".color");
+
+randomBtn.addEventListener("click", function () {
+    document.body.style.backgroundColor = colors[0];
+});
+
+normalBtn.addEventListener("click", function () {
+    document.body.style.backgroundColor = colors[1];
+});
